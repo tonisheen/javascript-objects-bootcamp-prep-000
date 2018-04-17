@@ -1,13 +1,13 @@
 playlist = { Eminem : 'Lose YourSelf' };
 
-function updatePlaylist(playlist, artist, title) {
-  playlist[artist] = title;
-  return playlist
+function updatePlaylist(aplaylist, artist, title) {
+  aplaylist[artist] = title;
+  return aplaylist
   
   //return Object.assign({}, playlist, {artist: title})
 }
 
-function removeFromPlaylist(playlist, artist) {
-    delete playlist[artist];
-    return playlist
+function removeFromPlaylist(aplaylist, artist) {
+    delete aplaylist[artist];
+    return aplaylist
 }
